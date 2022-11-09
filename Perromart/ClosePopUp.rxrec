@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="e9d1946c-e360-483f-aa90-844b3f4115c2"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ClosePopUp"
+	namespace="Perromart">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="beb97b53-09b8-407c-9c75-d2a54d1cb7b1"
+		waitaction="Exists"
+		waittimeout="5000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e952efa2-1508-4043-b36c-f0bc1778c932"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='perromart.com.sg']//button[@tabindex='0']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</WaitForRecordItem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="9;7"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="61639fee-cf6d-4395-8f8b-5a16fcad3dc6"
+		sx="1093"
+		sy="406"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e952efa2-1508-4043-b36c-f0bc1778c932"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="webelement"
+				rect="1084,399,19,19"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						circle
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="cx"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="cy"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="fill"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="r"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="stroke"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='perromart.com.sg']/body/div[3]/div/div//button/?/?/tag[@tagname='circle']
+				</path>
+				<robustPath>
+					/dom[@domain='perromart.com.sg']//tag[@tagname='circle']
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="030ebff9-ccad-4214-81f2-bfa85e54ef68">
+				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
+			</helperscreenshot>
+		</mouseitem>
+		<explicitdelayitem
+		duration="10000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+	</recorditems>
+	<repository
+	id="77022195-58b9-4e28-82a5-fa356c0f044a"
+	name="PerromartRepository"
+	relativepath="PerromartRepository.rxrep">
+		<codegen
+		classname="PerromartRepository"
+		namespace="Perromart">
+		</codegen>
+		<rootfolder
+		id="73842910-c644-49cd-96ec-017afee23e0d"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ClosePopUp.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc>
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="Perromart"
+      id="8e426028-9ee2-40eb-8049-4fe037620cf8"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="Perromart"
+      id="8e426028-9ee2-40eb-8049-4fe037620cf8"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>

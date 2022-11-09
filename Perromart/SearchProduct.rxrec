@@ -1,0 +1,596 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="9fa8fe57-2398-4550-bf49-88bc75c03886"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SearchProduct"
+	namespace="Perromart">
+	</codegen>
+	<variables>
+		<var
+		id="b9b6c631-a9da-425a-860e-a4edd4f8845a"
+		name="ProductName">
+		</var>
+	</variables>
+	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="334;24"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="1f67d1f6-cbb9-4415-a01b-d5645e277f93"
+		sx="1221"
+		sy="175"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="be645859-771d-4134-91c5-33d8a384c92d"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="True"
+				index="0"
+				prefcap="inputtag"
+				rect="887,151,461,43"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="placeholder"
+					type="System.String">
+						Search for products, brands and more
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="value"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='perromart.com.sg']//div[#'__next']/div[1]/nav/div/div[3]/div[1]/div[2]//input[@type='text']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="2345574a-aabb-4de3-8ece-0156b6ff70b6">
+				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
+ooA//9k=
+			</helperscreenshot>
+		</mouseitem>
+		<keysequenceitem
+		KeySequence="fefefefef"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		searchpropertyid="29486bc3-f169-4baf-8592-7c608f152de8">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="ProductName">
+				</binding>
+			</bindings>
+			<info
+			id="be645859-771d-4134-91c5-33d8a384c92d"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="True"
+				index="0"
+				prefcap="inputtag"
+				rect="887,151,461,43"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="placeholder"
+					type="System.String">
+						Search for products, brands and more
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="value"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='perromart.com.sg']//div[#'__next']/div[1]/nav/div/div[3]/div[1]/div[2]//input[@type='text']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="6bd8b88c-7031-40c4-a116-18ae2efa7e91">
+				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
+			</helperscreenshot>
+		</keysequenceitem>
+		<keysequenceitem
+		KeySequence="{Return}"
+		duration="20ms"
+		enabled="True"
+		optional="False"
+		presstime="20ms"
+		searchpropertyid="8183fd08-2eb8-49ef-865f-9807dee7c114">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="be645859-771d-4134-91c5-33d8a384c92d"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="True"
+				index="0"
+				prefcap="inputtag"
+				rect="887,151,461,43"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="placeholder"
+					type="System.String">
+						Search for products, brands and more
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="value"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='perromart.com.sg']//div[#'__next']/div[1]/nav/div/div[3]/div[1]/div[2]//input[@type='text']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</keysequenceitem>
+	</recorditems>
+	<repository
+	id="77022195-58b9-4e28-82a5-fa356c0f044a"
+	name="PerromartRepository"
+	relativepath="PerromartRepository.rxrep">
+		<codegen
+		classname="PerromartRepository"
+		namespace="Perromart">
+		</codegen>
+		<rootfolder
+		id="73842910-c644-49cd-96ec-017afee23e0d"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SearchProduct.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

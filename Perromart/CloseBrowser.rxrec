@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="01f29f70-dfe1-441d-97a7-0604bf272eee"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseBrowser"
+	namespace="Perromart">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="0ms"
+		method="KillProcess"
+		optional="False"
+		searchpropertyid="e63151f2-928f-4304-ae23-8eb0838b469b">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="92110ae9-7342-4a8c-86c1-0ea8a48d23ef"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@processname='chrome']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="77022195-58b9-4e28-82a5-fa356c0f044a"
+	name="PerromartRepository"
+	relativepath="PerromartRepository.rxrep">
+		<codegen
+		classname="PerromartRepository"
+		namespace="Perromart">
+		</codegen>
+		<rootfolder
+		id="73842910-c644-49cd-96ec-017afee23e0d"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseBrowser.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

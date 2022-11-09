@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{84FE81C6-7D5F-489A-8136-2E17318EADE2}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Perromart</RootNamespace>
+    <AssemblyName>Perromart</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>d219c344-914e-4224-a941-ef7a591381b7</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddToFav.cs">
+      <BoundTo>11c69917-4336-4470-bcb2-03c7896a6feb</BoundTo>
+      <DependentUpon>AddToFav.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>92755f25-5456-46eb-b9d5-1d4e9812340e</id>
+    </Compile>
+    <Compile Include="AddToFav.UserCode.cs">
+      <BoundTo>11c69917-4336-4470-bcb2-03c7896a6feb</BoundTo>
+      <DependentUpon>AddToFav.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c1970e8c-0ef1-44e7-b31f-ed89d6384ee3</id>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <id>2370d0dd-198b-45ce-b091-0af2795ad849</id>
+    </Compile>
+    <Compile Include="CloseBrowser.cs">
+      <BoundTo>66805d30-6395-4cf7-b8c1-8ca61843d6d7</BoundTo>
+      <DependentUpon>CloseBrowser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>334ce930-340f-4e87-be63-6e6aaad57f40</id>
+    </Compile>
+    <Compile Include="CloseBrowser.UserCode.cs">
+      <BoundTo>66805d30-6395-4cf7-b8c1-8ca61843d6d7</BoundTo>
+      <DependentUpon>CloseBrowser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1b4397c2-2a4f-4015-8808-d3907b7b5cec</id>
+    </Compile>
+    <Compile Include="ClosePopUp.cs">
+      <BoundTo>5411749c-cc2d-404f-b725-67b1ee9a047a</BoundTo>
+      <DependentUpon>ClosePopUp.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1b4214e1-76ff-4b58-b901-45c5863723ad</id>
+    </Compile>
+    <Compile Include="ClosePopUp.UserCode.cs">
+      <BoundTo>5411749c-cc2d-404f-b725-67b1ee9a047a</BoundTo>
+      <DependentUpon>ClosePopUp.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0844ba40-4a7a-4d22-8606-ea708c70bf36</id>
+    </Compile>
+    <Compile Include="EditProfile.cs">
+      <BoundTo>5b4caf07-9147-476b-9bb5-55958b0f8af4</BoundTo>
+      <DependentUpon>EditProfile.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0c45c75e-bfd8-40d5-8ae2-9f48bc1c7d93</id>
+    </Compile>
+    <Compile Include="EditProfile.UserCode.cs">
+      <BoundTo>5b4caf07-9147-476b-9bb5-55958b0f8af4</BoundTo>
+      <DependentUpon>EditProfile.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>01320407-7638-4413-8e47-78ed8696dde4</id>
+    </Compile>
+    <Compile Include="GoToPerrovetPage.cs">
+      <BoundTo>52549d6e-a0d7-4359-b43e-70e1baffe12f</BoundTo>
+      <DependentUpon>GoToPerrovetPage.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>19a0a845-9136-451f-9b20-2da63c03f39f</id>
+    </Compile>
+    <Compile Include="GoToPerrovetPage.UserCode.cs">
+      <BoundTo>52549d6e-a0d7-4359-b43e-70e1baffe12f</BoundTo>
+      <DependentUpon>GoToPerrovetPage.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a3f549b1-2845-4968-acbb-a2697c362319</id>
+    </Compile>
+    <Compile Include="Login.cs">
+      <BoundTo>dd2d3619-f474-45c1-8ac4-5a179b7e9bee</BoundTo>
+      <DependentUpon>Login.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ccea0c6a-1517-4632-8667-9011b7ded393</id>
+    </Compile>
+    <Compile Include="Login.UserCode.cs">
+      <BoundTo>dd2d3619-f474-45c1-8ac4-5a179b7e9bee</BoundTo>
+      <DependentUpon>Login.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a72575ef-385b-4ed2-a82f-a1321ea850e1</id>
+    </Compile>
+    <Compile Include="OpenBrowser.cs">
+      <BoundTo>d914b7f9-9898-4621-ad7b-2ba4c64afbea</BoundTo>
+      <DependentUpon>OpenBrowser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>87d37dfd-5c14-4a13-a482-7dc5a288b850</id>
+    </Compile>
+    <Compile Include="OpenBrowser.UserCode.cs">
+      <BoundTo>d914b7f9-9898-4621-ad7b-2ba4c64afbea</BoundTo>
+      <DependentUpon>OpenBrowser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b9e01d9d-db5c-4092-bb40-73ff9947a6a6</id>
+    </Compile>
+    <Compile Include="PerromartRepository.cs">
+      <BoundTo>d219c344-914e-4224-a941-ef7a591381b7</BoundTo>
+      <DependentUpon>PerromartRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>f057847e-b191-4af7-84ad-a69bfa6eb74a</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>6dc6c55f-6e87-46b8-9248-3e55b3a0d34c</id>
+    </Compile>
+    <Compile Include="EditProfileMyPet.cs">
+      <BoundTo>7f9fd1ed-7d03-4a9e-8d5b-8a9db979d99d</BoundTo>
+      <DependentUpon>EditProfileMyPet.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>081007a7-feb0-4087-b845-0623a8113617</id>
+    </Compile>
+    <Compile Include="EditProfileMyPet.UserCode.cs">
+      <BoundTo>7f9fd1ed-7d03-4a9e-8d5b-8a9db979d99d</BoundTo>
+      <DependentUpon>EditProfileMyPet.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>822b807f-c7ef-4185-acf6-b0ec6b02dd0f</id>
+    </Compile>
+    <Compile Include="Recording1.cs">
+      <BoundTo>7a9b2d8b-f594-443b-baf9-67942cac3dad</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8fa65033-f445-4be0-9645-e018062cd82c</id>
+    </Compile>
+    <Compile Include="Recording1.UserCode.cs">
+      <BoundTo>7a9b2d8b-f594-443b-baf9-67942cac3dad</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>18ed554c-e8f0-4fab-813d-ee18549872cc</id>
+    </Compile>
+    <Compile Include="SearchProduct.cs">
+      <BoundTo>a162c666-7783-420c-b63a-7b8d242a9d7f</BoundTo>
+      <DependentUpon>SearchProduct.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>de5d90e1-b81e-48b9-9d27-f5b208d5d330</id>
+    </Compile>
+    <Compile Include="SearchProduct.UserCode.cs">
+      <BoundTo>a162c666-7783-420c-b63a-7b8d242a9d7f</BoundTo>
+      <DependentUpon>SearchProduct.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>12dd9972-94f1-4904-8c83-ed29aa7ff945</id>
+    </Compile>
+    <Compile Include="ToFavPage.cs">
+      <BoundTo>853d4083-b50f-432a-b90e-d91b06d3b44c</BoundTo>
+      <DependentUpon>ToFavPage.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5bae7474-75f7-4c69-bfde-1588b3fb4dc4</id>
+    </Compile>
+    <Compile Include="ToFavPage.UserCode.cs">
+      <BoundTo>853d4083-b50f-432a-b90e-d91b06d3b44c</BoundTo>
+      <DependentUpon>ToFavPage.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fe4c7e52-cef4-46c9-b627-fa453fae8c62</id>
+    </Compile>
+    <Compile Include="VerifyMSGAddedToFav.cs">
+      <BoundTo>277d9566-556a-488b-819f-e7bd193d2c41</BoundTo>
+      <DependentUpon>VerifyMSGAddedToFav.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3df63b48-0d57-4912-a93c-793c5cfa8455</id>
+    </Compile>
+    <Compile Include="VerifyMSGAddedToFav.UserCode.cs">
+      <BoundTo>277d9566-556a-488b-819f-e7bd193d2c41</BoundTo>
+      <DependentUpon>VerifyMSGAddedToFav.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9164267a-413f-4cfc-80ca-6cf5ba216b62</id>
+    </Compile>
+    <Compile Include="VerifyMSGRemovedFromFav.cs">
+      <BoundTo>6637a8db-b8f2-4ad2-b017-fe05634e5567</BoundTo>
+      <DependentUpon>VerifyMSGRemovedFromFav.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>dd84e865-bfe1-4016-aa41-50ee11af7ea6</id>
+    </Compile>
+    <Compile Include="VerifyMSGRemovedFromFav.UserCode.cs">
+      <BoundTo>6637a8db-b8f2-4ad2-b017-fe05634e5567</BoundTo>
+      <DependentUpon>VerifyMSGRemovedFromFav.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>14f10feb-3f14-47c9-ad83-d2be72a8d17d</id>
+    </Compile>
+    <Compile Include="VerifyMyProfileChange.cs">
+      <BoundTo>92cef30d-1056-44b6-a789-1df3f0ee6519</BoundTo>
+      <DependentUpon>VerifyMyProfileChange.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d022078a-d081-4778-93fc-52dc3c9cb3dc</id>
+    </Compile>
+    <Compile Include="VerifyMyProfileChange.UserCode.cs">
+      <BoundTo>92cef30d-1056-44b6-a789-1df3f0ee6519</BoundTo>
+      <DependentUpon>VerifyMyProfileChange.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8542db9c-9209-415e-a326-e5e3290a3bc7</id>
+    </Compile>
+    <Compile Include="VerifyProductInFav.cs">
+      <BoundTo>30d3db74-de8b-4715-9ee3-9f6e4ba1c2dd</BoundTo>
+      <DependentUpon>VerifyProductInFav.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d3721f8f-8d6b-445e-99ff-07369210d7b1</id>
+    </Compile>
+    <Compile Include="VerifyProductInFav.UserCode.cs">
+      <BoundTo>30d3db74-de8b-4715-9ee3-9f6e4ba1c2dd</BoundTo>
+      <DependentUpon>VerifyProductInFav.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>69891605-e3b9-4f83-a54d-256efb1b6a79</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AddToFav.rxrec">
+      <BoundTo>d219c344-914e-4224-a941-ef7a591381b7</BoundTo>
+      <id>11c69917-4336-4470-bcb2-03c7896a6feb</id>
+      <recordtableid>e612cbd8-1123-40f5-85d9-f69871340c74</recordtableid>
+    </None>
+    <None Include="app.config">
+      <id>20164662-4504-4745-a61d-799ee9362399</id>
+    </None>
+    <None Include="CloseBrowser.rxrec">
+      <BoundTo>d219c344-914e-4224-a941-ef7a591381b7</BoundTo>
+      <id>66805d30-6395-4cf7-b8c1-8ca61843d6d7</id>
+      <recordtableid>01f29f70-dfe1-441d-97a7-0604bf272eee</recordtableid>
+    </None>
+    <None Include="ClosePopUp.rxrec">
+      <BoundTo>d219c344-914e-4224-a941-ef7a591381b7</BoundTo>
+      <id>5411749c-cc2d-404f-b725-67b1ee9a047a</id>
+      <recordtableid>e9d1946c-e360-483f-aa90-844b3f4115c2</recordtableid>
+    </None>
+    <None Include="EditProfile.rxrec">
+      <BoundTo>d219c344-914e-4224-a941-ef7a591381b7</BoundTo>
+      <id>5b4caf07-9147-476b-9bb5-55958b0f8af4</id>
+      <recordtableid>4dac9d55-d849-42c7-a068-8eb92b54b36e</recordtableid>
+    </None>
+    <None Include="GoToPerrovetPage.rxrec">
+      <BoundTo>d219c344-914e-4224-a941-ef7a591381b7</BoundTo>
+      <id>52549d6e-a0d7-4359-b43e-70e1baffe12f</id>
+      <recordtableid>1d891aa4-142d-4a01-82fa-73aedecbab0d</recordtableid>
+    </None>
+    <None Include="Login.rxrec">
+      <BoundTo>d219c344-914e-4224-a941-ef7a591381b7</BoundTo>
+      <id>dd2d3619-f474-45c1-8ac4-5a179b7e9bee</id>
+      <recordtableid>05bebd49-afd8-4401-b070-6552d7a5c03f</recordtableid>
+    </None>
+    <None Include="OpenBrowser.rxrec">
+      <BoundTo>d219c344-914e-4224-a941-ef7a591381b7</BoundTo>
+      <id>d914b7f9-9898-4621-ad7b-2ba4c64afbea</id>
+      <recordtableid>df4bb7f0-60a1-4499-b18c-e0160e4bfd5c</recordtableid>
+    </None>
+    <None Include="PerromartRepository.rximg">
+      <BoundTo>d219c344-914e-4224-a941-ef7a591381b7</BoundTo>
+      <DependentUpon>PerromartRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>df00560b-2f71-4e51-a361-462f8c99d888</id>
+    </None>
+    <None Include="PerromartRepository.rxrep">
+      <id>d219c344-914e-4224-a941-ef7a591381b7</id>
+      <repoid>77022195-58b9-4e28-82a5-fa356c0f044a</repoid>
+      <reporootid>73842910-c644-49cd-96ec-017afee23e0d</reporootid>
+    </None>
+    <None Include="EditProfileMyPet.rxrec">
+      <BoundTo>d219c344-914e-4224-a941-ef7a591381b7</BoundTo>
+      <id>7f9fd1ed-7d03-4a9e-8d5b-8a9db979d99d</id>
+      <recordtableid>744765d8-3bca-4dc2-a169-3c4897b82990</recordtableid>
+    </None>
+    <None Include="Recording1.rxrec">
+      <BoundTo>d219c344-914e-4224-a941-ef7a591381b7</BoundTo>
+      <id>7a9b2d8b-f594-443b-baf9-67942cac3dad</id>
+      <recordtableid>2295c805-61aa-49c1-87ae-bfd7c9cbe0eb</recordtableid>
+    </None>
+    <None Include="SearchProduct.rxrec">
+      <BoundTo>d219c344-914e-4224-a941-ef7a591381b7</BoundTo>
+      <id>a162c666-7783-420c-b63a-7b8d242a9d7f</id>
+      <recordtableid>9fa8fe57-2398-4550-bf49-88bc75c03886</recordtableid>
+    </None>
+    <None Include="ToFavPage.rxrec">
+      <BoundTo>d219c344-914e-4224-a941-ef7a591381b7</BoundTo>
+      <id>853d4083-b50f-432a-b90e-d91b06d3b44c</id>
+      <recordtableid>c485e759-a550-4148-8f57-3764a3f96c50</recordtableid>
+    </None>
+    <None Include="VerifyMSGAddedToFav.rxrec">
+      <BoundTo>d219c344-914e-4224-a941-ef7a591381b7</BoundTo>
+      <id>277d9566-556a-488b-819f-e7bd193d2c41</id>
+      <recordtableid>600442b8-43db-4421-add5-650f8f048a0b</recordtableid>
+    </None>
+    <None Include="VerifyMSGRemovedFromFav.rxrec">
+      <BoundTo>d219c344-914e-4224-a941-ef7a591381b7</BoundTo>
+      <id>6637a8db-b8f2-4ad2-b017-fe05634e5567</id>
+      <recordtableid>043472be-b541-499a-9b60-68afc49e402e</recordtableid>
+    </None>
+    <None Include="VerifyMyProfileChange.rxrec">
+      <BoundTo>d219c344-914e-4224-a941-ef7a591381b7</BoundTo>
+      <id>92cef30d-1056-44b6-a789-1df3f0ee6519</id>
+      <recordtableid>3d09cd82-a9e8-4546-880c-979e8d6192b6</recordtableid>
+    </None>
+    <None Include="VerifyProductInFav.rxrec">
+      <BoundTo>d219c344-914e-4224-a941-ef7a591381b7</BoundTo>
+      <id>30d3db74-de8b-4715-9ee3-9f6e4ba1c2dd</id>
+      <recordtableid>9545f0dd-97b0-4e02-8b43-e52f5b19d7cc</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Perromart.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>f28630f8-76fb-47a0-8a00-988fac55e702</id>
+    </Content>
+    <Content Include="Perromart.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>cdf14602-edf1-4a12-8d75-169a79330ea7</id>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

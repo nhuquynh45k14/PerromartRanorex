@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="9545f0dd-97b0-4e02-8b43-e52f5b19d7cc"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="VerifyProductInFav"
+	namespace="Perromart">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="Exists"
+		enabled="True"
+		optional="False"
+		searchpropertyid="1705a4dc-f27b-4fa7-b11e-7259a7bb568a">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d739ce7e-6a74-41c3-bbbe-b3b4565f9530"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='perromart.com.sg']//div[@class~'container']//*[text()=$ProductName]
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="77022195-58b9-4e28-82a5-fa356c0f044a"
+	name="PerromartRepository"
+	relativepath="PerromartRepository.rxrep">
+		<codegen
+		classname="PerromartRepository"
+		namespace="Perromart">
+		</codegen>
+		<rootfolder
+		id="73842910-c644-49cd-96ec-017afee23e0d"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		VerifyProductInFav.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
