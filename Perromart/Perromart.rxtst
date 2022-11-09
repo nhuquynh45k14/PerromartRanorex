@@ -264,6 +264,18 @@
 					variableid="1bb5acb3-3309-4712-895e-b451c35be08b"
 					variablename="ArticleName">
 					</var>
+					<var
+					dataname="NewParameter3"
+					datasourceid="84ed09de-ca5f-43a9-abfd-f86d44845cc0"
+					variableid="2d056f7e-908a-4ee4-aba9-7ac6c08e788e"
+					variablename="text">
+					</var>
+					<var
+					dataname="NewParameter4"
+					datasourceid="84ed09de-ca5f-43a9-abfd-f86d44845cc0"
+					variableid="356d61bb-48c2-4f3e-bdc1-8153a4f6be3e"
+					variablename="TextInArticle">
+					</var>
 				</databinding>
 			</testmodule>
 			<setup
@@ -303,6 +315,14 @@
 					<param
 					name="NewParameter2"
 					value="Can Dogs Eat Apples?">
+					</param>
+					<param
+					name="NewParameter3"
+					value="With all of the nutritional advantages of apples,">
+					</param>
+					<param
+					name="NewParameter4"
+					value="With all of the nutritional advantages of apples, as well as the fact that they are affordable and readily available in any produce section, adding these delectable fruits to your dog's diet should not be a problem if your dog is healthy">
 					</param>
 				</parameters>
 			</testcase>

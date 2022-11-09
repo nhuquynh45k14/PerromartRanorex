@@ -111,6 +111,18 @@ namespace Perromart
             set { _ArticleName = value; }
         }
 
+        string _text = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable text.
+        /// </summary>
+        [TestVariable("2d056f7e-908a-4ee4-aba9-7ac6c08e788e")]
+        public string text
+        {
+            get { return _text; }
+            set { _text = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -1173,6 +1185,7 @@ namespace Perromart
             RepoItemInfo _ourblogInfo;
             RepoItemInfo _txtsearchInfo;
             RepoItemInfo _articleInfo;
+            RepoItemInfo _contentInfo;
 
             /// <summary>
             /// Creates a new PerrovetPageUI  folder.
@@ -1183,6 +1196,7 @@ namespace Perromart
                 _ourblogInfo = new RepoItemInfo(this, "OurBlog", ".//*[@class='tab-link' and text()='Our Blog']", "element", 30000, null, "4b8a3b95-db2a-419e-bdd8-f53add19f2e3");
                 _txtsearchInfo = new RepoItemInfo(this, "txtSearch", ".//*[@id='field']", "element", 30000, null, "469c09a8-f3e2-434f-bd06-397734c1709d");
                 _articleInfo = new RepoItemInfo(this, "Article", ".//*[text()=$ArticleName]", "element", 30000, null, "333b317e-517d-4f23-86b5-dc3fd94d9742");
+                _contentInfo = new RepoItemInfo(this, "Content", ".//*[@class='article-title']/..//*//*[text()~$text]", "element", 30000, null, "11b7c466-02c5-4e71-8424-e65fae5950ae");
             }
 
             /// <summary>
@@ -1266,6 +1280,30 @@ namespace Perromart
                 get
                 {
                     return _articleInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Content item.
+            /// </summary>
+            [RepositoryItem("11b7c466-02c5-4e71-8424-e65fae5950ae")]
+            public virtual Ranorex.Unknown Content
+            {
+                get
+                {
+                    return _contentInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Content item info.
+            /// </summary>
+            [RepositoryItemInfo("11b7c466-02c5-4e71-8424-e65fae5950ae")]
+            public virtual RepoItemInfo ContentInfo
+            {
+                get
+                {
+                    return _contentInfo;
                 }
             }
         }

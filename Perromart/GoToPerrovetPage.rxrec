@@ -31,6 +31,10 @@ mode="Global">
 		id="9352b487-f240-4de9-aa64-e78ba638bee2"
 		name="Article">
 		</var>
+		<var
+		id="356d61bb-48c2-4f3e-bdc1-8153a4f6be3e"
+		name="TextInArticle">
+		</var>
 	</variables>
 	<recorditems>
 		<mouseitem
@@ -381,6 +385,35 @@ mode="Global">
 				</robustPath>
 			</info>
 		</mouseitem>
+		<validationitem
+		action="AttributeContains"
+		enabled="True"
+		optional="False"
+		searchpropertyid="f472085e-a5c6-4e49-a46b-6de74b30207e">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="TextInArticle">
+				</binding>
+			</bindings>
+			<info
+			id="11b7c466-02c5-4e71-8424-e65fae5950ae"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='www.perrovets.com']//*[@class='article-title']/..//*//*[text()~$text]
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				yourtext
+			</matchvalue>
+		</validationitem>
 	</recorditems>
 	<repository
 	id="77022195-58b9-4e28-82a5-fa356c0f044a"

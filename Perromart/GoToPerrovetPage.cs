@@ -43,6 +43,7 @@ namespace Perromart
         {
             Url = "";
             Article = "";
+            TextInArticle = "";
         }
 
         /// <summary>
@@ -79,6 +80,18 @@ namespace Perromart
             set { _Article = value; }
         }
 
+        string _TextInArticle;
+
+        /// <summary>
+        /// Gets or sets the value of variable TextInArticle.
+        /// </summary>
+        [TestVariable("356d61bb-48c2-4f3e-bdc1-8153a4f6be3e")]
+        public string TextInArticle
+        {
+            get { return _TextInArticle; }
+            set { _TextInArticle = value; }
+        }
+
         /// <summary>
         /// Gets or sets the value of variable ArticleName.
         /// </summary>
@@ -87,6 +100,16 @@ namespace Perromart
         {
             get { return repo.ArticleName; }
             set { repo.ArticleName = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the value of variable text.
+        /// </summary>
+        [TestVariable("2d056f7e-908a-4ee4-aba9-7ac6c08e788e")]
+        public string text
+        {
+            get { return repo.text; }
+            set { repo.text = value; }
         }
 
 #endregion
@@ -149,6 +172,10 @@ namespace Perromart
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PerrovetsYourFriendlyVetClinicAt.PerrovetPageUI.Article' at Center.", repo.PerrovetsYourFriendlyVetClinicAt.PerrovetPageUI.ArticleInfo, new RecordItemIndex(8));
             repo.PerrovetsYourFriendlyVetClinicAt.PerrovetPageUI.Article.Click();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (InnerText>$TextInArticle) on item 'PerrovetsYourFriendlyVetClinicAt.PerrovetPageUI.Content'.", repo.PerrovetsYourFriendlyVetClinicAt.PerrovetPageUI.ContentInfo, new RecordItemIndex(9));
+            Validate.AttributeContains(repo.PerrovetsYourFriendlyVetClinicAt.PerrovetPageUI.ContentInfo, "InnerText", TextInArticle);
             Delay.Milliseconds(0);
             
         }

@@ -338,6 +338,14 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 				searchtimeout="30000ms">
 					/dom[@domain='www.perrovets.com']//*[text()=$ArticleName]
 				</item>
+				<item
+				capname="unknown"
+				id="11b7c466-02c5-4e71-8424-e65fae5950ae"
+				name="Content"
+				robustPath="/dom[@domain='www.perrovets.com']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='www.perrovets.com']//*[@class='article-title']/..//*//*[text()~$text]
+				</item>
 			</folder>
 			<basepath>
 				/dom[@domain='www.perrovets.com']
@@ -381,6 +389,10 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		<var
 		id="1bb5acb3-3309-4712-895e-b451c35be08b"
 		name="ArticleName">
+		</var>
+		<var
+		id="2d056f7e-908a-4ee4-aba9-7ac6c08e788e"
+		name="text">
 		</var>
 	</variables>
 </repository>
