@@ -25,6 +25,67 @@ mode="Desktop">
 	<variables>
 	</variables>
 	<recorditems>
+		<explicitdelayitem
+		duration="5000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<mouseitem
+		action="Move"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="fa2f08a5-c6b1-48df-a9ec-c25dd3a15cb4"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6c601e5c-60fb-45be-bd28-7c84d314e6b7"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='perromart.com.sg']//*[@class='container mb-3']//*[text()='perrobook']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="2ba1762c-7f83-4348-8676-fd58873981d3"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6c601e5c-60fb-45be-bd28-7c84d314e6b7"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='perromart.com.sg']//*[@class='container mb-3']//*[text()='perrobook']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
 	</recorditems>
 	<repository
 	id="77022195-58b9-4e28-82a5-fa356c0f044a"

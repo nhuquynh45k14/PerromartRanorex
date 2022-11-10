@@ -26,6 +26,10 @@
 					</param>
 				</parameters>
 			</testcase>
+			<teardown
+			id="08277849-3645-47d3-b70b-19734049c7e9"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="0a0b5e2b-4358-4afa-952a-72a56237ad8b"
 			name="VerifyProductInFav"
@@ -39,6 +43,18 @@
 					variablename="ProductName">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="0f7c5a03-b07e-4e2a-97fe-47717df9186b"
+			name="ClosePopUp"
+			ref="e9d1946c-e360-483f-aa90-844b3f4115c2"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="13b15974-e633-4d65-962e-a8a1b4b350ab"
+			name="OpenBrowser"
+			ref="df4bb7f0-60a1-4499-b18c-e0160e4bfd5c"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="1788ab8f-9c45-4b7a-8bc4-887050198aea"
@@ -168,6 +184,16 @@
 			id="4f2f275d-052b-4639-8c3d-62f3b1fb3eb8"
 			name="teardown">
 			</teardown>
+			<testcase
+			id="4f3bfe20-a8b9-4c14-83ef-f7f7179e9237"
+			name="TestCase6">
+			</testcase>
+			<testmodule
+			id="52250c13-d498-4792-8d68-3ab4f279e8ad"
+			name="Recording1"
+			ref="2295c805-61aa-49c1-87ae-bfd7c9cbe0eb"
+			type="Recording">
+			</testmodule>
 			<teardown
 			id="52626ea4-af78-4d3c-9d4e-a2cf56a096ce"
 			name="teardown">
@@ -258,6 +284,8 @@
 					variableid="9352b487-f240-4de9-aa64-e78ba638bee2"
 					variablename="Article">
 					</var>
+				</databinding>
+				<missingdatavariablesbinding>
 					<var
 					dataname="NewParameter2"
 					datasourceid="84ed09de-ca5f-43a9-abfd-f86d44845cc0"
@@ -265,18 +293,12 @@
 					variablename="ArticleName">
 					</var>
 					<var
-					dataname="NewParameter3"
+					dataname="NewParameter4"
 					datasourceid="84ed09de-ca5f-43a9-abfd-f86d44845cc0"
 					variableid="2d056f7e-908a-4ee4-aba9-7ac6c08e788e"
 					variablename="text">
 					</var>
-					<var
-					dataname="NewParameter4"
-					datasourceid="84ed09de-ca5f-43a9-abfd-f86d44845cc0"
-					variableid="356d61bb-48c2-4f3e-bdc1-8153a4f6be3e"
-					variablename="TextInArticle">
-					</var>
-				</databinding>
+				</missingdatavariablesbinding>
 			</testmodule>
 			<setup
 			id="6ddcd29e-fb8e-487f-b475-1bdb3d85e09a"
@@ -315,10 +337,6 @@
 					<param
 					name="NewParameter2"
 					value="Can Dogs Eat Apples?">
-					</param>
-					<param
-					name="NewParameter3"
-					value="With all of the nutritional advantages of apples,">
 					</param>
 					<param
 					name="NewParameter4"
@@ -451,6 +469,10 @@
 					</var>
 				</missingdatavariablesbinding>
 			</testmodule>
+			<setup
+			id="c6677f13-5697-4a65-87a4-7cd4cea585af"
+			name="setup">
+			</setup>
 			<testcase
 			id="cca76fbe-7fde-41c1-a885-e6a5ef3326e0"
 			name="TestCase2">
@@ -477,6 +499,12 @@
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="ced7b7e7-075d-4a16-b313-cfd6e2804d84"
+			name="CloseBrowser"
+			ref="01f29f70-dfe1-441d-97a7-0604bf272eee"
+			type="Recording">
+			</testmodule>
 			<setup
 			id="da002b79-530f-4e7e-bd13-eb110092f452"
 			name="setup">
@@ -543,6 +571,32 @@
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="e80d6e11-3c33-4a27-a713-1112ad44707a"
+			name="VerifyTextInArticle"
+			ref="855aa8fd-9eda-4fd6-a217-6678b959c964"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="NewParameter2"
+					datasourceid="84ed09de-ca5f-43a9-abfd-f86d44845cc0"
+					variableid="f9e18aec-7aec-4b33-9fa8-aa465f2a4cbf"
+					variablename="Article">
+					</var>
+					<var
+					dataname="NewParameter4"
+					datasourceid="84ed09de-ca5f-43a9-abfd-f86d44845cc0"
+					variableid="2d056f7e-908a-4ee4-aba9-7ac6c08e788e"
+					variablename="text">
+					</var>
+					<var
+					dataname="NewParameter2"
+					datasourceid="84ed09de-ca5f-43a9-abfd-f86d44845cc0"
+					variableid="1bb5acb3-3309-4712-895e-b451c35be08b"
+					variablename="ArticleName">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="e86cfcb8-5ebd-4f41-be83-29ab22e992ef"
 			name="OpenBrowser"
@@ -775,6 +829,38 @@
 						id="656db12d-a607-4d22-8a5b-879c3616d0f6"
 						name="GoToPerrovetPage">
 						</testmodule>
+						<testmodule
+						id="e80d6e11-3c33-4a27-a713-1112ad44707a"
+						name="VerifyTextInArticle">
+						</testmodule>
+						<teardown
+						id="08277849-3645-47d3-b70b-19734049c7e9"
+						name="teardown">
+							<testmodule
+							id="ced7b7e7-075d-4a16-b313-cfd6e2804d84"
+							name="CloseBrowser">
+							</testmodule>
+						</teardown>
+					</testcase>
+					<testcase
+					id="4f3bfe20-a8b9-4c14-83ef-f7f7179e9237"
+					name="TestCase6">
+						<setup
+						id="c6677f13-5697-4a65-87a4-7cd4cea585af"
+						name="setup">
+							<testmodule
+							id="13b15974-e633-4d65-962e-a8a1b4b350ab"
+							name="OpenBrowser">
+							</testmodule>
+						</setup>
+						<testmodule
+						id="0f7c5a03-b07e-4e2a-97fe-47717df9186b"
+						name="ClosePopUp">
+						</testmodule>
+						<testmodule
+						id="52250c13-d498-4792-8d68-3ab4f279e8ad"
+						name="Recording1">
+						</testmodule>
 					</testcase>
 				</testcase>
 			</testsuite>
@@ -787,7 +873,7 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="84ed09de-ca5f-43a9-abfd-f86d44845cc0">
+			id="4f3bfe20-a8b9-4c14-83ef-f7f7179e9237">
 			</testcontainer>
 			<testcontainer
 			id="f51ad8d8-c23c-4e29-9fe1-d38da84e92c6">

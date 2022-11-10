@@ -292,6 +292,7 @@ namespace Perromart
             RepoItemInfo _btnperrovetInfo;
             RepoItemInfo _icondropdownInfo;
             RepoItemInfo _lblitemInfo;
+            RepoItemInfo _newitemInfo;
 
             /// <summary>
             /// Creates a new HomePageUI  folder.
@@ -306,6 +307,7 @@ namespace Perromart
                 _btnperrovetInfo = new RepoItemInfo(this, "btnPerrovet", ".//*[@class~'Nav_navBar']//a[text()='perrovets']", "element", 30000, null, "db5a8603-e78c-48fc-aea3-74fa727d039c");
                 _icondropdownInfo = new RepoItemInfo(this, "iconDropdown", ".//*[@id='dropdown-basic-nav']//*", "element", 30000, null, "f716d9dc-18a2-44ec-9210-11634f1049be");
                 _lblitemInfo = new RepoItemInfo(this, "lblItem", ".//a[text()=$item]", "", 30000, null, "2510cf7a-1fda-4ba3-966e-6fc4cb7f16d4");
+                _newitemInfo = new RepoItemInfo(this, "NewItem", ".//*[@id='__next']//*[@class='d-flex flex-column-reverse flex-md-row justify-content-md-between']//*[text()='perrobook']", "element", 30000, null, "6c601e5c-60fb-45be-bd28-7c84d314e6b7");
             }
 
             /// <summary>
@@ -485,6 +487,30 @@ namespace Perromart
                 get
                 {
                     return _lblitemInfo;
+                }
+            }
+
+            /// <summary>
+            /// The NewItem item.
+            /// </summary>
+            [RepositoryItem("6c601e5c-60fb-45be-bd28-7c84d314e6b7")]
+            public virtual Ranorex.Unknown NewItem
+            {
+                get
+                {
+                    return _newitemInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The NewItem item info.
+            /// </summary>
+            [RepositoryItemInfo("6c601e5c-60fb-45be-bd28-7c84d314e6b7")]
+            public virtual RepoItemInfo NewItemInfo
+            {
+                get
+                {
+                    return _newitemInfo;
                 }
             }
         }
@@ -1196,7 +1222,7 @@ namespace Perromart
                 _ourblogInfo = new RepoItemInfo(this, "OurBlog", ".//*[@class='tab-link' and text()='Our Blog']", "element", 30000, null, "4b8a3b95-db2a-419e-bdd8-f53add19f2e3");
                 _txtsearchInfo = new RepoItemInfo(this, "txtSearch", ".//*[@id='field']", "element", 30000, null, "469c09a8-f3e2-434f-bd06-397734c1709d");
                 _articleInfo = new RepoItemInfo(this, "Article", ".//*[text()=$ArticleName]", "element", 30000, null, "333b317e-517d-4f23-86b5-dc3fd94d9742");
-                _contentInfo = new RepoItemInfo(this, "Content", ".//*[@class='article-title']/..//*//*[text()~$text]", "element", 30000, null, "11b7c466-02c5-4e71-8424-e65fae5950ae");
+                _contentInfo = new RepoItemInfo(this, "Content", ".//*[@class='article-des w-richtext']//*[text()~$text]", "element", 30000, null, "787f7a1b-c1b7-43f9-92b1-be43bca7bed5");
             }
 
             /// <summary>
@@ -1286,7 +1312,7 @@ namespace Perromart
             /// <summary>
             /// The Content item.
             /// </summary>
-            [RepositoryItem("11b7c466-02c5-4e71-8424-e65fae5950ae")]
+            [RepositoryItem("787f7a1b-c1b7-43f9-92b1-be43bca7bed5")]
             public virtual Ranorex.Unknown Content
             {
                 get
@@ -1298,7 +1324,7 @@ namespace Perromart
             /// <summary>
             /// The Content item info.
             /// </summary>
-            [RepositoryItemInfo("11b7c466-02c5-4e71-8424-e65fae5950ae")]
+            [RepositoryItemInfo("787f7a1b-c1b7-43f9-92b1-be43bca7bed5")]
             public virtual RepoItemInfo ContentInfo
             {
                 get

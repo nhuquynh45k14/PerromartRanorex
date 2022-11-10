@@ -79,6 +79,17 @@ namespace Perromart
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(0));
+            Delay.Duration(5000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'ApplicationUnderTest.HomePageUI.NewItem' at Center.", repo.ApplicationUnderTest.HomePageUI.NewItemInfo, new RecordItemIndex(1));
+            repo.ApplicationUnderTest.HomePageUI.NewItem.MoveTo();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.HomePageUI.NewItem' at Center.", repo.ApplicationUnderTest.HomePageUI.NewItemInfo, new RecordItemIndex(2));
+            repo.ApplicationUnderTest.HomePageUI.NewItem.Click();
+            Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data

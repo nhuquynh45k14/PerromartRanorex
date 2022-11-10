@@ -315,6 +315,18 @@
       <UserCode>true</UserCode>
       <id>69891605-e3b9-4f83-a54d-256efb1b6a79</id>
     </Compile>
+    <Compile Include="VerifyTextInArticle.cs">
+      <BoundTo>8e33154f-aa57-4115-a973-77dc022c2867</BoundTo>
+      <DependentUpon>VerifyTextInArticle.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a8d31dc7-607c-46db-8f28-e92ec90d7600</id>
+    </Compile>
+    <Compile Include="VerifyTextInArticle.UserCode.cs">
+      <BoundTo>8e33154f-aa57-4115-a973-77dc022c2867</BoundTo>
+      <DependentUpon>VerifyTextInArticle.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9d0a7ef6-a7e1-4683-a8ea-42a21cb9f429</id>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="AddToFav.rxrec">
@@ -405,6 +417,11 @@
       <BoundTo>d219c344-914e-4224-a941-ef7a591381b7</BoundTo>
       <id>30d3db74-de8b-4715-9ee3-9f6e4ba1c2dd</id>
       <recordtableid>9545f0dd-97b0-4e02-8b43-e52f5b19d7cc</recordtableid>
+    </None>
+    <None Include="VerifyTextInArticle.rxrec">
+      <BoundTo>d219c344-914e-4224-a941-ef7a591381b7</BoundTo>
+      <id>8e33154f-aa57-4115-a973-77dc022c2867</id>
+      <recordtableid>855aa8fd-9eda-4fd6-a217-6678b959c964</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>

@@ -87,6 +87,14 @@ name="PerromartRepository">
 				searchtimeout="30000ms">
 					/dom[@domain='perromart.com.sg']//a[text()=$item]
 				</item>
+				<item
+				capname="unknown"
+				id="6c601e5c-60fb-45be-bd28-7c84d314e6b7"
+				name="NewItem"
+				robustPath="/dom[@domain='perromart.com.sg']/element"
+				searchtimeout="30000ms">
+					/dom[@domain='perromart.com.sg']//*[@id='__next']//*[@class='d-flex flex-column-reverse flex-md-row justify-content-md-between']//*[text()='perrobook']
+				</item>
 			</folder>
 			<folder
 			capname="unknown"
@@ -340,11 +348,11 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 				</item>
 				<item
 				capname="unknown"
-				id="11b7c466-02c5-4e71-8424-e65fae5950ae"
+				id="787f7a1b-c1b7-43f9-92b1-be43bca7bed5"
 				name="Content"
 				robustPath="/dom[@domain='www.perrovets.com']/element"
 				searchtimeout="30000ms">
-					/dom[@domain='www.perrovets.com']//*[@class='article-title']/..//*//*[text()~$text]
+					/dom[@domain='www.perrovets.com']//*[@class='article-des w-richtext']//*[text()~$text]
 				</item>
 			</folder>
 			<basepath>

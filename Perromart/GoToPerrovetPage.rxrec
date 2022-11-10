@@ -31,10 +31,6 @@ mode="Global">
 		id="9352b487-f240-4de9-aa64-e78ba638bee2"
 		name="Article">
 		</var>
-		<var
-		id="356d61bb-48c2-4f3e-bdc1-8153a4f6be3e"
-		name="TextInArticle">
-		</var>
 	</variables>
 	<recorditems>
 		<mouseitem
@@ -104,11 +100,6 @@ mode="Global">
 						perrovets | Your Friendly Vet Clinic At AMK
 					</attribute>
 					<attribute
-					name="browser"
-					type="Ranorex.Form, Ranorex.Core, Culture=neutral">
-						{Form:perrovets | Your Friendly Vet Clinic At AMK - Google Chrome}
-					</attribute>
-					<attribute
 					name="browsername"
 					type="System.String">
 						Chrome
@@ -156,7 +147,6 @@ mode="Global">
 					/dom[@domain='www.perrovets.com']
 				</path>
 				<robustPath>
-					/dom[@domain='www.perrovets.com']
 				</robustPath>
 			</info>
 			<arguments
@@ -200,11 +190,6 @@ mode="Global">
 						perrovets | Your Friendly Vet Clinic At AMK
 					</attribute>
 					<attribute
-					name="browser"
-					type="Ranorex.Form, Ranorex.Core, Culture=neutral">
-						{Form:perrovets | Your Friendly Vet Clinic At AMK - Google Chrome}
-					</attribute>
-					<attribute
 					name="browsername"
 					type="System.String">
 						Chrome
@@ -252,7 +237,6 @@ mode="Global">
 					/dom[@domain='www.perrovets.com']
 				</path>
 				<robustPath>
-					/dom[@domain='www.perrovets.com']
 				</robustPath>
 			</info>
 			<matchname>
@@ -260,158 +244,6 @@ mode="Global">
 			</matchname>
 			<matchvalue>
 				flymee.jp/member/register/
-			</matchvalue>
-		</validationitem>
-		<invokeactionrecorditem
-		action="Focus"
-		enabled="True"
-		optional="False"
-		searchpropertyid="e2e21ab8-9e2b-4863-a1b2-4fdfd2bcb4c5">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="4b8a3b95-db2a-419e-bdd8-f53add19f2e3"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain='www.perrovets.com']//*[@class='tab-link' and text()='Our Blog']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<arguments
-			id="6bcbb30f-fd5e-4893-b0b2-315e867bf8cf">
-			</arguments>
-		</invokeactionrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="99a8641f-17d8-4eca-96ab-145517441e92"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="4b8a3b95-db2a-419e-bdd8-f53add19f2e3"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain='www.perrovets.com']//*[@class='tab-link' and text()='Our Blog']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</mouseitem>
-		<keysequenceitem
-		KeySequence=""
-		duration="20ms"
-		enabled="True"
-		optional="False"
-		presstime="20ms"
-		searchpropertyid="be752218-8a9a-4481-8f27-d1413e5a9495">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="KeySequence"
-				variable="Article">
-				</binding>
-			</bindings>
-			<info
-			id="469c09a8-f3e2-434f-bd06-397734c1709d"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain='www.perrovets.com']//*[@id='field']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</keysequenceitem>
-		<keyitem
-		action="Press"
-		data="Return"
-		duration="20ms"
-		enabled="True"
-		optional="False"
-		presstime="20ms"
-		scancode="0"
-		searchpropertyid="c1ed16c1-ee20-45c7-96c3-1069a960b703"
-		setModifiers="True">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="469c09a8-f3e2-434f-bd06-397734c1709d"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain='www.perrovets.com']//*[@id='field']
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</keyitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="300ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="0f92d88b-5d1b-4734-b669-e94c421887b9"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="333b317e-517d-4f23-86b5-dc3fd94d9742"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain='www.perrovets.com']//*[text()=$ArticleName]
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-		</mouseitem>
-		<validationitem
-		action="AttributeContains"
-		enabled="True"
-		optional="False"
-		searchpropertyid="f472085e-a5c6-4e49-a46b-6de74b30207e">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="MatchValue"
-				variable="TextInArticle">
-				</binding>
-			</bindings>
-			<info
-			id="11b7c466-02c5-4e71-8424-e65fae5950ae"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain='www.perrovets.com']//*[@class='article-title']/..//*//*[text()~$text]
-				</path>
-				<robustPath>
-				</robustPath>
-			</info>
-			<matchname>
-				InnerText
-			</matchname>
-			<matchvalue>
-				yourtext
 			</matchvalue>
 		</validationitem>
 	</recorditems>
